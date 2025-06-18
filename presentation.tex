@@ -3,6 +3,11 @@
 \usetheme[progressbar=frametitle]{metropolis}
 \usepackage{appendixnumberbeamer}
 
+% for meme
+\usepackage{animate}
+\usepackage{graphicx}
+
+
 \usepackage{booktabs}
 \usepackage[scale=2]{ccicons}
 
@@ -51,6 +56,40 @@
 % Mark smaller captions
 \setbeamerfont{caption}{size=\tiny}
 
+% TITLE WITH WORKKING ANIGIF
+
+% \title{Catching Stray Balls}
+% \subtitle{Football, fandom, and the impact on digital discourse}
+% \author{Mark J. Hill}
+% \institute{Department of Digital Humanities, KCL}
+% \date{25 June 2025}
+
+% % Custom title page
+% \setbeamertemplate{title page}{
+%   \vbox{}
+%   \vfill
+  
+%     \usebeamerfont{title}\inserttitle\par
+%     \usebeamerfont{subtitle}\insertsubtitle\par
+%     \vskip1em
+%     \usebeamerfont{author}\insertauthor\par
+%     \usebeamerfont{institute}\insertinstitute\par
+%     \usebeamerfont{date}\insertdate\par
+  
+%   \vfill
+%   % Bottom content
+%   \begin{minipage}[t]{\textwidth}
+%     \includegraphics[height=1.5cm]{King's_College_London_Digital_Humanities.png}%
+%     \hfill
+%     \animategraphics[loop,autoplay,width=4cm]{10}{ani/}{00120}{00002}%
+%   \end{minipage}
+%   \vspace{0.2cm}
+% }
+
+
+% \begin{document}
+% \maketitle
+
 \title{Catching Stray Balls}
 \subtitle{Football, fandom, and the impact on digital discourse}
 % \date{\today}
@@ -69,12 +108,6 @@
 
 \maketitle
 
-%%\begin{frame}{Table of contents}
-%%  \setbeamertemplate{section in toc}[sections numbered]
-%%  \tableofcontents%[hideallsubsections]
-%%\end{frame}
-
-%%\section[Intro]{Introduction}
 
 \begin{frame}{The question and why it matters}
 
@@ -384,26 +417,10 @@ All-caps & 0.052*** & 0.133*** & 0.081*** \\
 }
 \end{frame}
 
-\begin{frame}{The Mechanism}
-\begin{center}
-\large
-Emotional trigger (e.g., football match)
-\\ $\downarrow$ \\
-\fbox{\parbox{0.4\textwidth}{\centering 
-{\footnotesize \textit{[Identification process]}}\\
-Emotional response in relevant community 
-\\ $\downarrow$ \\
-User moves to unrelated community}}
-\\ $\downarrow$ \\
-Emotional state transfers 
-\\ $\downarrow$ \\
-Toxic behavior spreads
-\end{center}
+\begin{frame}{Implications \& Applications}
 
 Digital communities are not isolated --- they're interconnected emotional ecosystems
-\end{frame}
 
-\begin{frame}{Implications \& Applications}
 \begin{columns}
 \begin{column}{0.5\textwidth}
 
@@ -454,6 +471,93 @@ Computational evidence of real-world event-driven emotional spillover across unr
 
 \begin{frame}[allowframebreaks]{References}
   \printbibliography
+\end{frame}
+
+
+\begin{frame}
+\scriptsize
+\begin{columns}
+\begin{column}{0.5\textwidth}
+\centering
+\begin{tabular}{p{.35\linewidth}p{.25\linewidth}p{.1\linewidth}}
+\hline
+\textbf{Subreddit} & \textbf{Club} & \textbf{Posts} \\
+\hline
+Gunners & Arsenal & 14.4M \\  
+reddevils & Man United & 13.2M \\
+LiverpoolFC & Liverpool & 11.5M \\
+chelseafc & Chelsea & 7.0M \\
+coys & Tottenham & 6.0M \\   
+MCFC & Man City & 2.0M \\
+Everton & Everton & 1.4M \\
+NUFC & Newcastle & 1.3M \\
+ManchesterUnited & Man United & 1.0M \\ 
+LeedsUnited & Leeds & 775K \\
+Hammers & West Ham & 771K \\
+avfc & Aston Villa & 713K \\
+ArsenalFC & Arsenal & 433K \\
+SaintsFC & Southampton & 332K \\
+lcfc & Leicester & 244K \\        
+nffc & Nottingham Forest & 192K \\        
+WWFC & Wolves & 153K \\           
+swanseacity & Swansea & 135K \\    
+BrightonHoveAlbion & Brighton & 130K \\
+crystalpalace & Crystal Palace & 128K \\
+\hline
+\end{tabular}
+\end{column}
+\begin{column}{0.5\textwidth}
+\centering
+\begin{tabular}{p{.35\linewidth}p{.25\linewidth}p{.1\linewidth}}
+\hline
+\textbf{Subreddit} & \textbf{Club} & \textbf{Posts} \\
+\hline
+SheffieldUnited & Sheffield Utd & 64K \\
+fulhamfc & Fulham & 61K \\
+NorwichCity & Norwich & 52K \\      
+safc & Sunderland & 42K \\
+Brentford & Brentford & 42K \\ 
+Watford\_FC & Watford & 32K \\
+superhoops & QPR & 29K \\
+WBAfootball & West Brom & 24K \\ 
+COYH & Luton & 20K \\
+bluebirds & Cardiff & 18K \\    
+Burnley & Burnley & 14K \\
+AFCBournemouth & Bournemouth & 13K \\        
+StokeCityFC & Stoke & 11K \\  
+Urz & Reading & 9K \\
+brfc & Blackburn & 6K \\
+bcfc & Birmingham & 5K \\          
+HullCity & Hull & 5K \\     
+HuddersfieldTownFC & Huddersfield & 4K \\
+latics & Wigan & 3K \\
+bwfc & Bolton & 3K \\
+Boro & Middlesbrough & 2K \\
+%~ & ~ & ~ \\
+\hline
+\end{tabular}
+\end{column}
+\end{columns}
+\label{tab:subreddits}
+\end{frame}
+
+\begin{frame}{The Mechanism}
+\begin{center}
+\large
+Emotional trigger (e.g., football match)
+\\ $\downarrow$ \\
+\fbox{\parbox{0.4\textwidth}{\centering 
+{\footnotesize \textit{[Identification process]}}\\
+Emotional response in relevant community 
+\\ $\downarrow$ \\
+User moves to unrelated community}}
+\\ $\downarrow$ \\
+Emotional state transfers 
+\\ $\downarrow$ \\
+Toxic behavior spreads
+\end{center}
+
+Digital communities are not isolated --- they're interconnected emotional ecosystems
 \end{frame}
 
 \begin{frame}[fragile]{Backup slides}
